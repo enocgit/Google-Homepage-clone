@@ -1,0 +1,309 @@
+/***************** RESETS ****************/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* .google logo span {
+   white-space: nowrap;
+} */
+
+/*****************  SELECTORS *****************************/
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  /* margin: 20px; */
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+section {
+  margin-bottom: 25px;
+}
+
+#main-header {
+  margin: 10px 0 20px;
+}
+
+#main-header ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#main-header ul li {
+  padding-right: 20px;
+}
+
+#main-header ul li a {
+  font-size: 1.2rem;
+  color: initial;
+}
+
+#main-header ul li:nth-of-type(3) a img {
+  max-width: 100%;
+  width: 28px;
+}
+
+#main-header ul li:nth-of-type(3) a img:hover {
+  background: #f4f4f4;
+  border-radius: 100%;
+  padding: 5px;
+  transform: scale(1.6);
+}
+
+#main-header ul li:nth-of-type(4) a img {
+  max-width: 100%;
+  width: 40px;
+  /* object-position: 5px -5px;*/
+}
+
+#main-header ul li:nth-of-type(4) a img:hover {
+  background: #f4f4f4;
+  border-radius: 100%;
+  padding: 3px;
+  transform: scale(1.2);
+}
+
+#google-homepage-main {
+  /* text-align: center; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 100px auto 135px;
+  width: 65%;
+  /* border: 1px solid black; */
+}
+
+.google-logo {
+  font: bold 6rem "Product Sans", sans-serif;
+  /* width: 100%; */
+}
+
+.google-logo:hover {
+  cursor: default;
+}
+
+.search-area {
+  /* outline: 1px solid black; */
+  width: 100%;
+}
+
+.search-area input {
+  width: 100%;
+  padding: 12px 50px;
+  border-radius: 50px;
+  border: 1px solid #999;
+  font-size: 1.5rem;
+  outline: none;
+  background-image: url("icons/icons8-search-32.png"),
+    url("icons/icons8-google-48.png");
+  background-position: 10px 12.5px, right 20px top 12px;
+  background-repeat: no-repeat;
+  background-size: 20px;
+}
+
+.search-area input:hover {
+  box-shadow: 0 0 1.5px;
+}
+
+.search-feeling-lucky {
+  display: flex;
+  justify-content: center;
+}
+
+.search-feeling-lucky button {
+  margin: 0 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-translation p {
+  font-size: 1.2rem;
+}
+
+#main-footer {
+  font-size: 1.4rem;
+  background-color: #eee;
+  /* margin: 0; */
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.country {
+  border-bottom: 1px solid #ccc;
+  padding: 10px 20px;
+  color: #666;
+}
+
+.footer-last-content {
+  padding: 10px 20px;
+  /* display: flex; */
+  position: relative;
+}
+
+.footer-last-content ul:first-child {
+  display: inline-flex;
+}
+
+.footer-last-content ul:first-child li {
+  padding-right: 20px;
+}
+
+.footer-last-content ul:first-child li a {
+  color: #666;
+}
+
+.footer-last-content ul:last-child {
+  display: inline-flex;
+  position: absolute;
+  right: 20px;
+}
+
+.footer-last-content ul:last-child li {
+  padding-left: 20px;
+}
+
+.footer-last-content ul:last-child li a {
+  color: #666;
+}
+
+/*************** GOOGLE LOGO COLORS ***********/
+
+.blue {
+  color: #4171ca;
+}
+
+.yellow {
+  color: #fad506;
+}
+
+.green {
+  color: #096d09;
+}
+
+.red {
+  color: #d11111;
+}
+
+/************* MEADIA QUERIRES *******************/
+
+@media screen and (max-width: 63.375em) {
+  html {
+    font-size: 60%;
+  }
+
+  /* #google-homepage-main {
+    width: 75%;
+  } */
+}
+
+@media screen and (max-width: 47.25em) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media screen and (max-width: 42.625em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media screen and (max-width: 32.875em) {
+  .footer-last-content ul:first-child {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+  }
+
+  .footer-last-content ul:last-child {
+    display: flex;
+    justify-content: center;
+    position: static;
+  }
+}
+
+@media screen and (max-width: 31em) {
+  #google-homepage-main {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 24.8125em) {
+  html {
+    font-size: 45%;
+  }
+
+  .search-feeling-lucky button {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 21.5625em) {
+  .footer-last-content ul:first-child {
+    flex-wrap: wrap;
+  }
+
+  .footer-last-content ul:first-child li {
+    margin-bottom: 10px;
+  }
+
+  .footer-last-content ul:last-child {
+    flex-wrap: wrap;
+  }
+
+  .footer-last-content ul:last-child li {
+    margin-bottom: 8px;
+  }
+}
+
+@media screen and (max-width: 15.0625em) {
+  .search-translation p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .google-logo {
+    font-size: 4rem;
+  }
+
+  #main-header ul {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-left: 20px;
+    height: 120px;
+    /* outline: 1px solid black; */
+  }
+
+  #main-header ul li:last-child {
+    order: -2;
+  }
+
+  #main-header ul li:nth-child(3) {
+    order: -1;
+  }
+}
